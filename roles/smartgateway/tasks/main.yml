@@ -49,9 +49,9 @@
             - name: metrics-config
               configMap:
                 name: "{{ meta.name }}-smartgateway"
-            nodeSelector:
-              node: "{{ meta.name }}"
-              application: sa-telemetry
+#             nodeSelector:
+#               node: "{{ meta.name }}"
+#               application: sa-telemetry
 
 - name: Service for the smart gateway
   k8s:
